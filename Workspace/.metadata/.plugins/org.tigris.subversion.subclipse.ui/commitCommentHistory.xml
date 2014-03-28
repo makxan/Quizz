@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>scorecount username</CommitComment>
+	<CommitComment>no containment</CommitComment>
+	<CommitComment>containment on</CommitComment>
+	<CommitComment>next</CommitComment>
+	<CommitComment>name and id added to quizz</CommitComment>
+	<CommitComment>Differentiated Source and Destination Terminals</CommitComment>
+	<CommitComment>Changes in model, Question, Answer, Startpoint, Endpoint now inherits from terminal removing the need for explicit terminal object in a Quizz model</CommitComment>
+	<CommitComment>Terminals as interface</CommitComment>
+	<CommitComment>Ändringar i modellen</CommitComment>
+	<CommitComment>transitions fixade</CommitComment>
+</CommitComments>

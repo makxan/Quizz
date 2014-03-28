@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/se.bjornkjellgren.quizz.new_diagram/src" modelPluginID="se.bjornkjellgren.quizz.new_diagram"
+    modelName="Quizz" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>../Quizz/membrane/model/quizz.ecore</foreignModel>
+  <genPackages prefix="Quizz" disposableProviderFactory="true" ecorePackage="quizz.ecore#/">
+    <genClasses ecoreClass="quizz.ecore#//Quizz">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference quizz.ecore#//Quizz/end"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference quizz.ecore#//Quizz/start"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference quizz.ecore#//Quizz/questions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference quizz.ecore#//Quizz/score"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute quizz.ecore#//Quizz/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute quizz.ecore#//Quizz/id"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="quizz.ecore#//Question">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute quizz.ecore#//Question/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute quizz.ecore#//Question/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute quizz.ecore#//Question/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference quizz.ecore#//Question/next"/>
+    </genClasses>
+    <genClasses ecoreClass="quizz.ecore#//MultipleChoice">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference quizz.ecore#//MultipleChoice/answers"/>
+    </genClasses>
+    <genClasses ecoreClass="quizz.ecore#//FreeText"/>
+    <genClasses ecoreClass="quizz.ecore#//Answer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute quizz.ecore#//Answer/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute quizz.ecore#//Answer/correct"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute quizz.ecore#//Answer/points"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute quizz.ecore#//Answer/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference quizz.ecore#//Answer/next"/>
+    </genClasses>
+    <genClasses ecoreClass="quizz.ecore#//Endpoint"/>
+    <genClasses ecoreClass="quizz.ecore#//Startpoint">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference quizz.ecore#//Startpoint/next"/>
+    </genClasses>
+    <genClasses ecoreClass="quizz.ecore#//Scorecounter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute quizz.ecore#//Scorecounter/score"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute quizz.ecore#//Scorecounter/username"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="quizz.ecore#//DestinationTerminal"/>
+  </genPackages>
+</genmodel:GenModel>

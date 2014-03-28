@@ -1,0 +1,7 @@
+# Tracing options for the QuizzMembrane.diagram plug-in
+
+# Common issues
+QuizzMembrane.diagram/debug=false
+
+# Visual IDs
+QuizzMembrane.diagram/debug/visualID=false

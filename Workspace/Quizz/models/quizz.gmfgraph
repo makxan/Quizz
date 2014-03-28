@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="quizz">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MultipleChoiceNextTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MultipleChoiceAnswersTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="FreeTextNextTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="StartpointNextTargetDecoration"/>
+    <descriptors name="MultipleChoiceFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="MultipleChoiceFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="MultipleChoiceTitleFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="MultipleChoiceTextFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="MultipleChoiceIdFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="MultipleChoiceNextFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MultipleChoiceNextFigure" lineWidth="2" targetDecoration="//@figures.0/@descriptors.1/@actualFigure/@children.0">
+        <children xsi:type="gmfgraph:PolygonDecoration" name="targetDecorationNext">
+          <template x="-1" y="1"/>
+          <template/>
+          <template x="-1" y="-1"/>
+        </children>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="MultipleChoiceAnswersFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MultipleChoiceAnswersFigure" targetDecoration="//@figures.0/@descriptors.2/@actualFigure/@children.0">
+        <children xsi:type="gmfgraph:PolygonDecoration" name="targetDecorationAnswer">
+          <template x="-1" y="1"/>
+          <template/>
+          <template x="-1" y="-1"/>
+        </children>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="FreeTextFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="FreeTextFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="FreeTextTitleFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="FreeTextTextFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="FreeTextIdFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="FreeTextNextFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="FreeTextNextFigure" lineWidth="2" targetDecoration="//@figures.0/@descriptors.4/@actualFigure/@children.0">
+        <children xsi:type="gmfgraph:PolygonDecoration" name="DecorationFree">
+          <template x="-1" y="1"/>
+          <template/>
+          <template x="-1" y="-1"/>
+        </children>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="AnswerFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AnswerFigure" targetDecoration="//@figures.0/@descriptors.5/@actualFigure/@children.4">
+        <children xsi:type="gmfgraph:Label" name="AnswerTextFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="AnswerCorrectFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="AnswerPointsFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="AnswerIdFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:PolygonDecoration" name="decorationAnswer2">
+          <template x="-1" y="1"/>
+          <template/>
+          <template x="-1" y="-1"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.2"/>
+      <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.3"/>
+    </descriptors>
+    <descriptors name="EndpointFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="EndpointFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="red"/>
+        <children xsi:type="gmfgraph:Label" name="EndpointLabel" text="Endpoint"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="StartpointFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="StartpointFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="green"/>
+        <children xsi:type="gmfgraph:Label" name="StartpointLabel" text="Startpoint"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="StartpointNextFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="StartpointNextFigure" lineWidth="2" targetDecoration="//@figures.0/@descriptors.8/@actualFigure/@children.0">
+        <children xsi:type="gmfgraph:PolygonDecoration" name="Startpointdecoration">
+          <template x="-1" y="1"/>
+          <template/>
+          <template x="-1" y="-1"/>
+        </children>
+      </actualFigure>
+    </descriptors>
+  </figures>
+  <nodes name="MultipleChoice" figure="MultipleChoiceFigure"/>
+  <nodes name="FreeText" figure="FreeTextFigure"/>
+  <nodes name="Startpoint" figure="StartpointFigure"/>
+  <nodes name="Endpoint" figure="EndpointFigure"/>
+  <nodes name="Scorecounter"/>
+  <connections name="MultipleChoiceNext" figure="MultipleChoiceNextFigure"/>
+  <connections name="MultipleChoiceAnswers" figure="MultipleChoiceAnswersFigure"/>
+  <connections name="FreeTextNext" figure="FreeTextNextFigure"/>
+  <connections name="Answer" figure="AnswerFigure"/>
+  <connections name="StartpointNext" figure="StartpointNextFigure"/>
+  <labels name="MultipleChoiceTitle" figure="MultipleChoiceFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="MultipleChoiceText" figure="MultipleChoiceFigure" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
+  <labels name="MultipleChoiceId" figure="MultipleChoiceFigure" accessor="//@figures.0/@descriptors.0/@accessors.2"/>
+  <labels name="FreeTextTitle" figure="FreeTextFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="FreeTextText" figure="FreeTextFigure" accessor="//@figures.0/@descriptors.3/@accessors.1"/>
+  <labels name="FreeTextId" figure="FreeTextFigure" accessor="//@figures.0/@descriptors.3/@accessors.2"/>
+  <labels name="AnswerText" figure="AnswerFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+  <labels name="AnswerCorrect" figure="AnswerFigure" accessor="//@figures.0/@descriptors.5/@accessors.1"/>
+  <labels name="AnswerPoints" figure="AnswerFigure" accessor="//@figures.0/@descriptors.5/@accessors.2"/>
+  <labels name="AnswerId" figure="AnswerFigure" accessor="//@figures.0/@descriptors.5/@accessors.3"/>
+  <labels name="ScorecounterScore"/>
+  <labels name="ScorecounterUsername"/>
+</gmfgraph:Canvas>

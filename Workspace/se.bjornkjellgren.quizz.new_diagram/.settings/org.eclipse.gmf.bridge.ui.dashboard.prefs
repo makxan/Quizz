@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/se.bjornkjellgren.quizz.new_diagram/quizz.genmodel
+gmf_dashboard/domainModel=platform\:/resource/Quizz/membrane/model/quizz.ecore
+gmf_dashboard/generationModel=platform\:/resource/se.bjornkjellgren.quizz.new_diagram/src/quizz.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/se.bjornkjellgren.quizz.new_diagram/src/quizz.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/se.bjornkjellgren.quizz.new_diagram/src/quizz.gmfmap
+gmf_dashboard/option_rcp=*
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/se.bjornkjellgren.quizz.new_diagram/src/quizz.gmftool

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="OrganizeManifests.ExportedPackages.addMissing"/>
+	<item value="false" key="OrganizeManifests.calculateUses"/>
+	<item value="false" key="OrganizeManifests.RequireImport.modifyDep"/>
+	<item value="false" key="OrganizeManifests.Translation.nls"/>
+	<item value="false" key="OrganizeManifests.Translation.unusedKeys"/>
+	<item value="*.internal*" key="OrganizeManifests.ExportedPackages.packageFilter"/>
+	<item value="false" key="OrganizeManifests.General.cleanup"/>
+	<item value="false" key="OrganizeManifests.ExportedPackages.makeInternal"/>
+	<item value="false" key="OrganizeManifests.AddDependencies"/>
+	<item value="false" key="OrganizeManifests.ExportedPackages.removeUnresolved"/>
+	<item value="false" key="OrganizeManifests.RequireImport.findRemoveUnused"/>
+	<item value="false" key="OrganizeManifests.RequireImport.resolve:markOptional"/>
+	<item value="false" key="OrganizeManifests.General.cleanup.removeUselessFiles"/>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+	</section>
+	<section name="RefactoringWizard.Organize Manifests">
+		<item value="450" key="height"/>
+		<item value="600" key="width"/>
+	</section>
+	<section name="PluginExportWizard">
+		<item value="true" key="exportUpdate"/>
+		<item value="false" key="saveAsAnt"/>
+		<item value="" key="alias"/>
+		<item value="Generate source bundles" key="exportSourceFormat"/>
+		<item value="false" key="qualifier"/>
+		<item value="" key="password"/>
+		<item value="" key="keypass"/>
+		<item value="false" key="exportSource"/>
+		<item value="false" key="useWorkspaceCompiledClasses"/>
+		<item value="" key="keystore"/>
+		<item value="1" key="exportType"/>
+		<item value="false" key="signJAR"/>
+		<item value="/Users/bjornkjellgren/Dropbox/Skola/VT13/DAT240/Workspace/plugin" key="destination2"/>
+		<item value="/Users/bjornkjellgren/Dropbox/Skola/VT13/DAT240/plugin" key="destination1"/>
+		<item value="/Users/bjornkjellgren/Dropbox/Skola/VT13/DAT240/plugin" key="destination0"/>
+		<item value="true" key="allowBinaryCycles"/>
+		<item value="201302051128" key="qualifierName"/>
+	</section>
+	<section name="pde_compiler_errorwarnings_block">
+		<item value="false" key="3"/>
+		<item value="false" key="2"/>
+		<item value="false" key="1"/>
+		<item value="true" key="0"/>
+		<item value="false" key="4"/>
+	</section>
+</section>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quizz:Quizz xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:quizz="http://quizz/1.0" name="Membrane Quizz">
+  <end/>
+  <start next="//@questions.0"/>
+  <questions xsi:type="quizz:FreeText" title="Question 1" text="Why are you taking this quiz?" next="//@questions.1"/>
+  <questions xsi:type="quizz:MultipleChoice" title="Question 2" text="What is 1+2?" id="1" next="//@questions.2">
+    <answers text="2" id="1" next="//@questions.2"/>
+  </questions>
+  <questions xsi:type="quizz:MultipleChoice" title="Question 3" text="What is 4+5?" id="2" next="//@questions.3">
+    <answers text="999" id="2" next="//@questions.2"/>
+    <answers text="9" correct="true" points="1" next="//@questions.3"/>
+    <answers text="3" next="//@end"/>
+  </questions>
+  <questions xsi:type="quizz:MultipleChoice" title="Question 4" text="What is the square root of 25?" next="//@end">
+    <answers text="5" correct="true" next="//@end"/>
+    <answers text="43" id="1" next="//@end"/>
+  </questions>
+  <score score="1" username="Erik"/>
+</quizz:Quizz>

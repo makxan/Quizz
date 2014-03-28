@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="1125" localization="plugin" name="%pluginName" project="QuizzMembrane" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1126" class="quizz.presentation.QuizzEditorPlugin$Implementation" localization="plugin" name="%pluginName" project="QuizzMembrane.editor" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1127" class="quizz.provider.QuizzEditPlugin$Implementation" localization="plugin" name="%pluginName" project="QuizzMembrane.edit" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1128" class="quizz.diagram.part.QuizzDiagramEditorPlugin" localization="plugin" name="%pluginName" project="QuizzMembrane.diagram" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1129" localization="plugin" name="%pluginName" project="QuizzMembrane.tests" provider="%providerName">
+		<library name="."/>
+	</bundle>
+</map>

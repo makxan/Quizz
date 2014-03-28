@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.acceleo.ide.ui.launching.launchConfigurationType">
+<stringAttribute key="org.eclipse.acceleo.ide.ui.ARGUMENTS" value=""/>
+<booleanAttribute key="org.eclipse.acceleo.ide.ui.COMPUTE_PROFILING" value="false"/>
+<booleanAttribute key="org.eclipse.acceleo.ide.ui.COMPUTE_TRACEABILITY" value="false"/>
+<stringAttribute key="org.eclipse.acceleo.ide.ui.LAUNCHING_STRATEGY_DESCRIPTION" value="Acceleo Plug-in Application (Default)"/>
+<stringAttribute key="org.eclipse.acceleo.ide.ui.MODEL_PATH" value="/Quizz/testQuizz/default.quizz"/>
+<stringAttribute key="org.eclipse.acceleo.ide.ui.TARGET_PATH" value="/se.bjornjkellgren.generate/src_gen"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/se.bjornjkellgren.generate/src/se/bjornjkellgren/generate/main/Generate.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="se.bjornjkellgren.generate.main.Generate"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="&quot;/Users/bjornkjellgren/Dropbox/Skola/VT13/DAT240/Workspace/Quizz/testQuizz/default.quizz&quot; &quot;/Users/bjornkjellgren/Dropbox/Skola/VT13/DAT240/Workspace/se.bjornjkellgren.generate/src_gen&quot;"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="se.bjornjkellgren.generate"/>
+</launchConfiguration>

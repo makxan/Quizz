@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quizz:Quizz xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:quizz="http://quizz/1.0" name="Membrane Master Quiz">
+  <end/>
+  <start next="//@questions.0"/>
+  <questions xsi:type="quizz:FreeText" title="Question 1" text="Why are you taking this quiz?" next="//@questions.1"/>
+  <questions xsi:type="quizz:MultipleChoice" title="Question 2" text="What is 5+5?" id="1" next="//@questions.2">
+    <answers text="10" correct="true" points="1" next="//@questions.2"/>
+    <answers text="12" id="1" next="//@questions.2"/>
+  </questions>
+  <questions xsi:type="quizz:MultipleChoice" title="Question 3" text="Who is the president in the U.S.A?" id="2" next="//@questions.3">
+    <answers text="Barack Obama" correct="true" points="1" next="//@end"/>
+    <answers text="Göran Persson" next="//@questions.3"/>
+    <answers text="Fredrik Federley" next="//@questions.3"/>
+  </questions>
+  <questions xsi:type="quizz:MultipleChoice" title="Question 4" text="In which city is the White house located?" id="4" next="//@end">
+    <answers text="Washington D.C" correct="true" next="//@end"/>
+    <answers text="Stockholm" next="//@end"/>
+  </questions>
+  <score username="Erik"/>
+</quizz:Quizz>

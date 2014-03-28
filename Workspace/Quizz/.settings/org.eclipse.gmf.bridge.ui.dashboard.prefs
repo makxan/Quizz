@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/Quizz/models/quizz.genmodel
+gmf_dashboard/domainModel=platform\:/resource/Quizz/membrane/model/quizz.ecore
+gmf_dashboard/generationModel=platform\:/resource/Quizz/models/quizz.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/Quizz/models/quizz.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/Quizz/models/quizz.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/Quizz/models/quizz.gmftool

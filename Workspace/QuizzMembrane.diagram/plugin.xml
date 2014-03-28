@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension point="org.eclipse.team.core.fileTypes" id="repo-ftype">
+      <?gmfgen generated="true"?>
+      <fileTypes type="text" extension="quizz_diagram"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser" id="resource-factory">
+      <?gmfgen generated="true"?>
+      <parser
+         type="quizz_diagram"
+         class="org.eclipse.gmf.runtime.emf.core.resources.GMFResourceFactory">
+      </parser>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors" id="gmf-editor">
+      <?gmfgen generated="true"?>
+      <editor
+         id="quizz.diagram.part.QuizzDiagramEditorID"
+         name="%editorName"
+         icon="icons/obj16/QuizzDiagramFile.gif"
+         extensions="quizz_diagram"
+         default="true"
+         class="quizz.diagram.part.QuizzDiagramEditor"
+         matchingStrategy="quizz.diagram.part.QuizzMatchingStrategy"
+         contributorClass="quizz.diagram.part.QuizzDiagramActionBarContributor">
+      </editor>
+   </extension>
+   
+   <extension point="org.eclipse.ui.contexts" id="ui-context">
+      <?gmfgen generated="true"?>
+      <context
+         description="%context.description"
+         id="quizz.diagram.ui.diagramContext"
+         name="%context.name"
+         parentId="org.eclipse.gmf.runtime.diagram.ui.diagramContext">
+      </context>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards" id="creation-wizard">
+      <?gmfgen generated="true"?>
+  	  <wizard
+  	     name="%newWizardName"
+  	     icon="icons/obj16/QuizzDiagramFile.gif"
+  	     category="org.eclipse.ui.Examples"
+  	     class="quizz.diagram.part.QuizzCreationWizard"
+  	     id="quizz.diagram.part.QuizzCreationWizardID">
+  	  	 <description>%newWizardDesc</description>  
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.popupMenus" id="%extension.id">
+      <?gmfgen generated="true"?>
+      <objectContribution
+            id="QuizzMembrane.diagram.InitDiagram"
+            nameFilter="*.quizz"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               label="%initDiagramActionLabel"
+               class="quizz.diagram.part.QuizzInitDiagramFileAction"
+               menubarPath="additions"
+               enablesFor="1"
+               id="QuizzMembrane.diagram.InitDiagramAction">
+         </action>
+      </objectContribution>
+   </extension>
+	
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.action.globalActionHandlerProviders" id="global-actions">
+      <?gmfgen generated="true"?>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramGlobalActionHandlerProvider"
+         id="QuizzPresentation">
+         <Priority name="Lowest"/>
+         <ViewId id="quizz.diagram.part.QuizzDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="delete"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart">
+               <GlobalActionId actionId="save"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="save">
+               </GlobalActionId>
+            </ElementType>        
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.ide.providers.DiagramIDEGlobalActionHandlerProvider"
+         id="QuizzPresentationIDE">
+         <Priority name="Lowest"/>
+         <ViewId id="quizz.diagram.part.QuizzDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="bookmark"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+            class="org.eclipse.gmf.runtime.diagram.ui.render.providers.DiagramUIRenderGlobalActionHandlerProvider"
+            id="QuizzRender">
+         <Priority name="Lowest"/>
+         <ViewId id="quizz.diagram.part.QuizzDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="cut"/>
+               <GlobalActionId actionId="copy"/>
+               <GlobalActionId actionId="paste"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+   </extension>
+
+
+   <extension point="org.eclipse.core.runtime.preferences" id="prefs">
+      <?gmfgen generated="true"?>
+      <initializer class="quizz.diagram.preferences.DiagramPreferenceInitializer"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.preferencePages" id="prefpages">
+      <?gmfgen generated="true"?>
+      <page
+            id="QuizzMembrane.diagram.general"
+            name="%prefpage.QuizzMembrane.diagram.general"
+            class="quizz.diagram.preferences.DiagramGeneralPreferencePage">
+      </page>
+      <page
+            id="QuizzMembrane.diagram.appearance"
+            name="%prefpage.QuizzMembrane.diagram.appearance"
+            category="QuizzMembrane.diagram.general"
+            class="quizz.diagram.preferences.DiagramAppearancePreferencePage">
+      </page>
+      <page
+            id="QuizzMembrane.diagram.connections"
+            name="%prefpage.QuizzMembrane.diagram.connections"
+            category="QuizzMembrane.diagram.general"
+            class="quizz.diagram.preferences.DiagramConnectionsPreferencePage">
+      </page>
+      <page
+            id="QuizzMembrane.diagram.printing"
+            name="%prefpage.QuizzMembrane.diagram.printing"
+            category="QuizzMembrane.diagram.general"
+            class="quizz.diagram.preferences.DiagramPrintingPreferencePage">
+      </page>
+      <page
+            id="QuizzMembrane.diagram.rulersAndGrid"
+            name="%prefpage.QuizzMembrane.diagram.rulersAndGrid"
+            category="QuizzMembrane.diagram.general"
+            class="quizz.diagram.preferences.DiagramRulersAndGridPreferencePage">
+      </page>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyContributor" id="prop-contrib">
+      <?gmfgen generated="true"?>
+      <propertyContributor
+            contributorId="QuizzMembrane.diagram"
+            labelProvider="quizz.diagram.sheet.QuizzSheetLabelProvider">
+         <propertyCategory category="domain"/>
+         <propertyCategory category="visual"/>
+         <propertyCategory category="extra"/>
+      </propertyContributor>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyTabs" id="proptabs">
+      <?gmfgen generated="true"?>   
+      <propertyTabs contributorId="QuizzMembrane.diagram">
+         <propertyTab
+             category="visual"
+             id="property.tab.AppearancePropertySection"
+             label="%tab.appearance"/>
+          <propertyTab
+             category="visual"
+             id="property.tab.DiagramPropertySection"
+             label="%tab.diagram"/>
+          <propertyTab
+             category="domain"
+             id="property.tab.domain"
+             label="%tab.domain"/>
+      </propertyTabs>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertySections" id="propsections">
+      <?gmfgen generated="true"?>   
+      <propertySections contributorId="QuizzMembrane.diagram">
+         <propertySection id="property.section.ConnectorAppearancePropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ConnectionEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ConnectionAppearancePropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>
+         <propertySection id="property.section.ShapeColorAndFontPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ShapeEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ShapeColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection> 
+         <propertySection id="property.section.DiagramColorsAndFontsPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.DiagramColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>     
+         <propertySection id="property.section.RulerGridPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.grid.RulerGridPropertySection" 
+            tab="property.tab.DiagramPropertySection">
+         </propertySection>     
+         <propertySection
+            id="property.section.domain" 
+            tab="property.tab.domain"
+            class="quizz.diagram.sheet.QuizzPropertySection">
+            <input type="org.eclipse.gmf.runtime.notation.View"/>
+            <input type="org.eclipse.gef.EditPart"/>
+            <input type="quizz.diagram.navigator.QuizzAbstractNavigatorItem"/>
+         </propertySection>
+      </propertySections>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders" id="view-provider">
+      <?gmfgen generated="true"?>
+      <viewProvider class="quizz.diagram.providers.QuizzViewProvider">
+         <Priority name="Lowest"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Quizz"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,2002,2003,2004,2005"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001,4002,4003"/>
+      </viewProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders" id="ep-provider">
+      <?gmfgen generated="true"?>
+      <editpartProvider class="quizz.diagram.providers.QuizzEditPartProvider">
+         <Priority name="Lowest"/>
+         <object class="org.eclipse.gmf.runtime.notation.Diagram" id="generated-diagram">
+            <method name="getType()" value="Quizz"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
+            <method name="getType()" value="2001,2002,2003,2004,2005"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
+            <method name="getType()" value="4001,4002,4003"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
+            <method name="getType()" value="5001,5002,5003"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
+            <method name="getType()" value=""/>
+         </object>
+         <context views="generated-diagram,generated-nodes,generated-links,generated-labels,generated-compartments"/>
+      </editpartProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.ui.modelingAssistantProviders" id="modelassist-provider">
+      <?gmfgen generated="true"?>
+      <modelingAssistantProvider class="quizz.diagram.providers.QuizzModelingAssistantProvider">
+         <Priority name="Lowest"/>
+         <object class="quizz.diagram.edit.parts.QuizzEditPart" id="Quizz_1000"/>
+         <object class="quizz.diagram.edit.parts.StartpointEditPart" id="MultipleChoice_2001"/>
+         <object class="quizz.diagram.edit.parts.ScorecounterEditPart" id="Startpoint_2002"/>
+         <object class="quizz.diagram.edit.parts.EndpointEditPart" id="Endpoint_2003"/>
+         <object class="quizz.diagram.edit.parts.MultipleChoiceEditPart" id="Scorecounter_2004"/>
+         <object class="quizz.diagram.edit.parts.FreeTextEditPart" id="FreeText_2005"/>
+         <context elements="Quizz_1000,MultipleChoice_2001,Startpoint_2002,Endpoint_2003,Scorecounter_2004,FreeText_2005,"/>
+      </modelingAssistantProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.iconProviders" id="icon-provider">
+      <?gmfgen generated="true"?>
+      <IconProvider class="quizz.diagram.providers.QuizzIconProvider">
+         <Priority name="Low"/>
+      </IconProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders" id="parser-provider">
+      <?gmfgen generated="true"?>
+      <ParserProvider class="quizz.diagram.providers.QuizzParserProvider">
+         <Priority name="Lowest"/>
+      </ParserProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes" id="element-types">
+      <?gmfgen generated="true"?>
+      <metamodel nsURI="http://quizz/1.0">
+         <metamodelType
+               id="QuizzMembrane.diagram.Quizz_1000"
+               name="%metatype.name.Quizz_1000"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Quizz"
+               edithelper="quizz.diagram.edit.helpers.QuizzEditHelper">
+            <param name="semanticHint" value="1000"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://quizz/1.0">
+         <metamodelType
+               id="QuizzMembrane.diagram.MultipleChoice_2001"
+               name="%metatype.name.MultipleChoice_2001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="MultipleChoice"
+               edithelper="quizz.diagram.edit.helpers.StartpointEditHelper">
+            <param name="semanticHint" value="2001"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://quizz/1.0">
+         <metamodelType
+               id="QuizzMembrane.diagram.Startpoint_2002"
+               name="%metatype.name.Startpoint_2002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Startpoint"
+               edithelper="quizz.diagram.edit.helpers.ScorecounterEditHelper">
+            <param name="semanticHint" value="2002"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://quizz/1.0">
+         <metamodelType
+               id="QuizzMembrane.diagram.Endpoint_2003"
+               name="%metatype.name.Endpoint_2003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Endpoint"
+               edithelper="quizz.diagram.edit.helpers.EndpointEditHelper">
+            <param name="semanticHint" value="2003"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://quizz/1.0">
+         <metamodelType
+               id="QuizzMembrane.diagram.Scorecounter_2004"
+               name="%metatype.name.Scorecounter_2004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Scorecounter"
+               edithelper="quizz.diagram.edit.helpers.MultipleChoiceEditHelper">
+            <param name="semanticHint" value="2004"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://quizz/1.0">
+         <metamodelType
+               id="QuizzMembrane.diagram.FreeText_2005"
+               name="%metatype.name.FreeText_2005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="FreeText"
+               edithelper="quizz.diagram.edit.helpers.FreeTextEditHelper">
+            <param name="semanticHint" value="2005"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://quizz/1.0">
+         <metamodelType
+               id="QuizzMembrane.diagram.Answer_4001"
+               name="%metatype.name.Answer_4001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Answer"
+               edithelper="quizz.diagram.edit.helpers.AnswerEditHelper">
+            <param name="semanticHint" value="4001"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://quizz/1.0">
+         <specializationType
+               id="QuizzMembrane.diagram.QuestionNext_4002"
+               name="%metatype.name.QuestionNext_4002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4002"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://quizz/1.0">
+         <specializationType
+               id="QuizzMembrane.diagram.StartpointNext_4003"
+               name="%metatype.name.StartpointNext_4003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4003"/>
+         </specializationType>
+      </metamodel>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings" id="element-types-bindings">
+      <?gmfgen generated="true"?>
+      <clientContext id="QuizzMembrane.diagram.TypeContext">
+         <enablement>
+            <test
+               property="org.eclipse.gmf.runtime.emf.core.editingDomain"
+               value="QuizzMembrane.diagram.EditingDomain"/>
+         </enablement>
+      </clientContext> 
+      <binding context="QuizzMembrane.diagram.TypeContext">
+         <elementType ref="QuizzMembrane.diagram.Quizz_1000"/>
+         <elementType ref="QuizzMembrane.diagram.MultipleChoice_2001"/>
+         <elementType ref="QuizzMembrane.diagram.Startpoint_2002"/>
+         <elementType ref="QuizzMembrane.diagram.Endpoint_2003"/>
+         <elementType ref="QuizzMembrane.diagram.Scorecounter_2004"/>
+         <elementType ref="QuizzMembrane.diagram.FreeText_2005"/>
+         <elementType ref="QuizzMembrane.diagram.Answer_4001"/>
+         <elementType ref="QuizzMembrane.diagram.QuestionNext_4002"/>
+         <elementType ref="QuizzMembrane.diagram.StartpointNext_4003"/>
+         <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
+      </binding>
+   </extension>
+	   <extension point="org.eclipse.core.expressions.propertyTesters" id="navigator-proptest.isURIEditorInput">
+      <?gmfgen generated="true"?>
+       <propertyTester
+           id="QuizzMembrane.diagram.URIEditorInputPropertyTester"
+           type="org.eclipse.emf.common.ui.URIEditorInput"
+           namespace="QuizzMembrane.diagram"
+           properties="isURIEditorInput"
+           class="quizz.diagram.part.QuizzUriEditorInputTester">
+       </propertyTester>
+   </extension>
+
+	   <extension point="org.eclipse.ui.navigator.viewer" id="navigator-viewbinding">
+      <?gmfgen generated="true"?>
+      <viewerContentBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <contentExtension pattern="QuizzMembrane.diagram.resourceContent"/>
+			<contentExtension pattern="QuizzMembrane.diagram.domainResourceContent"/>
+            <contentExtension pattern="QuizzMembrane.diagram.navigatorLinkHelper"/>
+         </includes>
+      </viewerContentBinding>
+      <viewerActionBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <actionExtension pattern="QuizzMembrane.diagram.navigatorActionProvider"/>
+         </includes>
+      </viewerActionBinding>
+   </extension>
+
+   <extension point="org.eclipse.ui.navigator.navigatorContent" id="navigator-content">
+      <?gmfgen generated="true"?>
+      <navigatorContent
+            id="QuizzMembrane.diagram.resourceContent" 
+            name="%navigatorContentName" 
+            priority="normal" 
+            contentProvider="quizz.diagram.navigator.QuizzNavigatorContentProvider" 
+            labelProvider="quizz.diagram.navigator.QuizzNavigatorLabelProvider"
+            icon="icons/obj16/QuizzDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="quizz_diagram"/>
+               </and>
+               <instanceof value="quizz.diagram.navigator.QuizzAbstractNavigatorItem"/>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <or>
+         	   <instanceof value="quizz.diagram.navigator.QuizzAbstractNavigatorItem"/>
+            </or>
+         </possibleChildren>
+         <commonSorter 
+               id="QuizzMembrane.diagram.navigatorSorter" 
+               class="quizz.diagram.navigator.QuizzNavigatorSorter">
+            <parentExpression>
+               <or>
+	              <and>
+    	             <instanceof value="org.eclipse.core.resources.IFile"/>
+        	         <test property="org.eclipse.core.resources.extension" value="quizz_diagram"/>
+                  </and>
+                  <instanceof value="quizz.diagram.navigator.QuizzAbstractNavigatorItem"/>
+               </or>
+            </parentExpression>
+         </commonSorter>
+      </navigatorContent>
+      <navigatorContent
+            id="QuizzMembrane.diagram.domainResourceContent" 
+            name="%domainNavigatorContentName" 
+            priority="normal" 
+            contentProvider="quizz.diagram.navigator.QuizzDomainNavigatorContentProvider" 
+            labelProvider="quizz.diagram.navigator.QuizzDomainNavigatorLabelProvider"
+            icon="icons/obj16/QuizzDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="quizz"/>
+               </and>
+               <instanceof value="quizz.diagram.navigator.QuizzDomainNavigatorItem"/>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <instanceof value="quizz.diagram.navigator.QuizzDomainNavigatorItem"/>
+         </possibleChildren>
+      </navigatorContent>
+      <actionProvider
+            id="QuizzMembrane.diagram.navigatorActionProvider"
+            class="quizz.diagram.navigator.QuizzNavigatorActionProvider">
+         <enablement>
+            <or>
+               <instanceof value="quizz.diagram.navigator.QuizzAbstractNavigatorItem"/>
+            </or>
+         </enablement>
+      </actionProvider>
+   </extension>
+   
+	   <extension point="org.eclipse.ui.navigator.linkHelper" id="navigator-linkhelper">
+      <?gmfgen generated="true"?>
+      <linkHelper
+            id="QuizzMembrane.diagram.navigatorLinkHelper"
+            class="quizz.diagram.navigator.QuizzNavigatorLinkHelper">
+         <editorInputEnablement>
+            <and>
+               <instanceof value="org.eclipse.emf.common.ui.URIEditorInput"/>
+               <test property="QuizzMembrane.diagram.isURIEditorInput"/>
+            </and>
+         </editorInputEnablement>
+         <selectionEnablement>
+            <instanceof value="quizz.diagram.navigator.QuizzAbstractNavigatorItem"/>
+         </selectionEnablement>
+      </linkHelper>
+   </extension>
+   <extension point="org.eclipse.ui.commands" id="update-cmd">
+      <?gmfgen generated="true"?>
+      <command
+         categoryId="org.eclipse.ui.category.edit"
+         defaultHandler="quizz.diagram.part.QuizzDiagramUpdateCommand"
+         description="%update.diagram.description"
+         id="quizz.diagram.updateDiagram"
+         name="%update.diagram.name"/>
+   </extension>
+   
+   <extension point="org.eclipse.ui.bindings" id="update-cmd-binding">
+      <?gmfgen generated="true"?>
+      <key 
+         commandId="quizz.diagram.updateDiagram"
+         contextId="quizz.diagram.ui.diagramContext"
+         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+         sequence="F5"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.menus" id="context-menus">
+      <?gmfgen generated="true"?>
+      <!-- menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=">
+      </menuContribution>
+      <menuContribution locationURI="toolbar:org.eclipse.ui.main.toolbar?after=">
+      </menuContribution -->
+      <menuContribution locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu">
+         <command commandId="QuizzMembrane.diagram.LoadResourceAction">
+            <visibleWhen>
+               <and>
+                  <with variable="activePartId"><equals value="quizz.diagram.part.QuizzDiagramEditorID"/></with>
+                  <with variable="selection"><iterate ifEmpty="false"> 
+                     <instanceof value="quizz.diagram.edit.parts.QuizzEditPart"/>
+                  </iterate></with>
+               </and>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands" id="menu-commands">
+      <?gmfgen generated="true"?>
+      <category id="quizz.diagram.part.QuizzDiagramEditorID" name="%cmdcategory.name" description="%cmdcategory.desc"/>
+      <command id="QuizzMembrane.diagram.LoadResourceAction"
+         name="%command.name"
+         categoryId="quizz.diagram.part.QuizzDiagramEditorID"
+         defaultHandler="quizz.diagram.part.LoadResourceAction"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.handlers" id="menu-handlers">
+      <?gmfgen generated="true"?>
+   </extension>
+
+   <!-- optionally, specify keybindings -->
+</plugin>

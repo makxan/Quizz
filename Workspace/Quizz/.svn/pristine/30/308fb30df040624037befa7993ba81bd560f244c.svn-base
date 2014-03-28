@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:quizz="http://quizz/1.0" xmi:id="_E5_ngIADEeK9z7aUOIadMQ" type="Quizz" name="default.quizz_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_GWlhUIADEeK9z7aUOIadMQ" type="2001">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_GWlhUYADEeK9z7aUOIadMQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_GWlhUoADEeK9z7aUOIadMQ" fontName="Segoe UI"/>
+    <element xmi:type="quizz:Startpoint" href="default.quizz#//@start"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GWlhU4ADEeK9z7aUOIadMQ" x="36" y="36" width="73" height="61"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_HHRXYIADEeK9z7aUOIadMQ" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_HHVBwIADEeK9z7aUOIadMQ" type="5001"/>
+    <element xmi:type="quizz:Scorecounter" href="default.quizz#//@score"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HHRXYYADEeK9z7aUOIadMQ" x="36" y="144" width="73" height="61"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_H5NxsIADEeK9z7aUOIadMQ" type="2003">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_H5NxsYADEeK9z7aUOIadMQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_H5NxsoADEeK9z7aUOIadMQ" fontName="Segoe UI"/>
+    <element xmi:type="quizz:Endpoint" href="default.quizz#//@end"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H5Nxs4ADEeK9z7aUOIadMQ" x="720" y="252" width="73" height="61"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_IiQHoIADEeK9z7aUOIadMQ" type="2005" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_IiQusIADEeK9z7aUOIadMQ" type="5003"/>
+    <element xmi:type="quizz:FreeText" href="default.quizz#//@questions.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IiQHoYADEeK9z7aUOIadMQ" x="180" y="36" width="85" height="73"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Mi2PQIADEeK9z7aUOIadMQ" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Mi22UIADEeK9z7aUOIadMQ" type="5002"/>
+    <element xmi:type="quizz:MultipleChoice" href="default.quizz#//@questions.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mi2PQYADEeK9z7aUOIadMQ" x="360" y="36" width="85" height="73"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_RQN9UIADEeK9z7aUOIadMQ" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_RQOkYIADEeK9z7aUOIadMQ" type="5002"/>
+    <element xmi:type="quizz:MultipleChoice" href="default.quizz#//@questions.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RQN9UYADEeK9z7aUOIadMQ" x="360" y="192" width="85" height="85"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_GI-jUIAoEeKSENiG7kUPXQ" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_GI_xcIAoEeKSENiG7kUPXQ" type="5002"/>
+    <element xmi:type="quizz:MultipleChoice" href="default.quizz#//@questions.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GI-jUYAoEeKSENiG7kUPXQ" x="552" y="36" width="85" height="73"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_E5_ngYADEeK9z7aUOIadMQ"/>
+  <element xmi:type="quizz:Quizz" href="default.quizz#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_Www0wIADEeK9z7aUOIadMQ" type="4003" source="_IiQHoIADEeK9z7aUOIadMQ" target="_Mi2PQIADEeK9z7aUOIadMQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_Www0wYADEeK9z7aUOIadMQ" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Www0woADEeK9z7aUOIadMQ" points="[0, 0, -103, 42]$[95, -49, -8, -7]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WxJ2UIADEeK9z7aUOIadMQ" id="(1.0,0.6986301369863014)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WxJ2UYADEeK9z7aUOIadMQ" id="(0.18823529411764706,0.6301369863013698)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_X1aIoIADEeK9z7aUOIadMQ" type="4002" source="_GWlhUIADEeK9z7aUOIadMQ" target="_IiQHoIADEeK9z7aUOIadMQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_X1aIoYADEeK9z7aUOIadMQ" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_X1aIooADEeK9z7aUOIadMQ" points="[0, -1, -86, 0]$[71, 2, -15, 3]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X1g2UIADEeK9z7aUOIadMQ" id="(1.0,0.7213114754098361)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X1g2UYADEeK9z7aUOIadMQ" id="(0.17647058823529413,0.589041095890411)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_cw81kIADEeK9z7aUOIadMQ" type="4001" source="_Mi2PQIADEeK9z7aUOIadMQ" target="_RQN9UIADEeK9z7aUOIadMQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_cw9coIADEeK9z7aUOIadMQ" fontName="Segoe UI"/>
+    <element xmi:type="quizz:Answer" href="default.quizz#//@questions.1/@answers.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cw9coYADEeK9z7aUOIadMQ" points="[8, 0, 0, -90]$[13, 83, 5, -7]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cxBuEIADEeK9z7aUOIadMQ" id="(0.7411764705882353,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cxCVIIADEeK9z7aUOIadMQ" id="(0.8352941176470589,0.08235294117647059)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_eD98oIADEeK9z7aUOIadMQ" type="4003" source="_Mi2PQIADEeK9z7aUOIadMQ" target="_RQN9UIADEeK9z7aUOIadMQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_eD98oYADEeK9z7aUOIadMQ" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eD98ooADEeK9z7aUOIadMQ" points="[-3, 0, 0, -91]$[-3, 47, 0, -44]$[-3, 83, 0, -8]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eECOEIADEeK9z7aUOIadMQ" id="(0.16470588235294117,0.9178082191780822)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eECOEYADEeK9z7aUOIadMQ" id="(0.27058823529411763,0.11764705882352941)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_zMgcoIADEeK9z7aUOIadMQ" type="4001" source="_RQN9UIADEeK9z7aUOIadMQ" target="_RQN9UIADEeK9z7aUOIadMQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_zMgcoYADEeK9z7aUOIadMQ" fontName="Segoe UI"/>
+    <element xmi:type="quizz:Answer" href="default.quizz#//@questions.2/@answers.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zMgcooADEeK9z7aUOIadMQ" points="[-3, 0, -42, 3]$[-87, 0, -126, 3]$[-87, 65, -126, 68]$[33, 65, -6, 68]$[33, 40, -6, 43]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zMlVIIADEeK9z7aUOIadMQ" id="(0.03529411764705882,0.5294117647058824)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_IJZi8IAoEeKSENiG7kUPXQ" type="4001" source="_RQN9UIADEeK9z7aUOIadMQ" target="_GI-jUIAoEeKSENiG7kUPXQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_IJZi8YAoEeKSENiG7kUPXQ" fontName="Segoe UI"/>
+    <element xmi:type="quizz:Answer" href="default.quizz#//@questions.2/@answers.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IJZi8oAoEeKSENiG7kUPXQ" points="[0, 0, -112, 151]$[107, -149, -5, 2]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IJgQoIAoEeKSENiG7kUPXQ" id="(0.9294117647058824,0.2)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IJgQoYAoEeKSENiG7kUPXQ" id="(0.058823529411764705,0.7808219178082192)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_LZL4sIAoEeKSENiG7kUPXQ" type="4001" source="_RQN9UIADEeK9z7aUOIadMQ" target="_H5NxsIADEeK9z7aUOIadMQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_LZL4sYAoEeKSENiG7kUPXQ" fontName="Segoe UI"/>
+    <element xmi:type="quizz:Answer" href="default.quizz#//@questions.2/@answers.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LZL4soAoEeKSENiG7kUPXQ" points="[0, 0, -135, 151]$[130, -142, -5, 9]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LZRYQIAoEeKSENiG7kUPXQ" id="(0.9529411764705882,0.5058823529411764)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LZRYQYAoEeKSENiG7kUPXQ" id="(0.0684931506849315,0.819672131147541)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_PWUcoIAoEeKSENiG7kUPXQ" type="4003" source="_RQN9UIADEeK9z7aUOIadMQ" target="_GI-jUIAoEeKSENiG7kUPXQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_PWUcoYAoEeKSENiG7kUPXQ" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PWUcooAoEeKSENiG7kUPXQ" points="[0, 0, -159, 160]$[162, -150, 3, 10]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PWW44IAoEeKSENiG7kUPXQ" id="(0.9176470588235294,0.4235294117647059)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PWW44YAoEeKSENiG7kUPXQ" id="(0.611764705882353,0.863013698630137)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_UqYXQIAoEeKSENiG7kUPXQ" type="4001" source="_GI-jUIAoEeKSENiG7kUPXQ" target="_H5NxsIADEeK9z7aUOIadMQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_UqYXQYAoEeKSENiG7kUPXQ" fontName="Segoe UI"/>
+    <element xmi:type="quizz:Answer" href="default.quizz#//@questions.3/@answers.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UqYXQoAoEeKSENiG7kUPXQ" points="[0, 0, -104, -167]$[98, 159, -6, -8]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UqdPwIAoEeKSENiG7kUPXQ" id="(1.0,0.7808219178082192)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UqdPwYAoEeKSENiG7kUPXQ" id="(0.2876712328767123,0.13114754098360656)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_WKKvAIAoEeKSENiG7kUPXQ" type="4001" source="_GI-jUIAoEeKSENiG7kUPXQ" target="_H5NxsIADEeK9z7aUOIadMQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_WKKvAYAoEeKSENiG7kUPXQ" fontName="Segoe UI"/>
+    <element xmi:type="quizz:Answer" href="default.quizz#//@questions.3/@answers.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WKLWEIAoEeKSENiG7kUPXQ" points="[0, 0, -119, -180]$[102, 185, -17, 5]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WKQ1oIAoEeKSENiG7kUPXQ" id="(0.7764705882352941,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WKQ1oYAoEeKSENiG7kUPXQ" id="(0.2328767123287671,0.6065573770491803)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZW6X0IAoEeKSENiG7kUPXQ" type="4003" source="_GI-jUIAoEeKSENiG7kUPXQ" target="_H5NxsIADEeK9z7aUOIadMQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZW6X0YAoEeKSENiG7kUPXQ" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZW6X0oAoEeKSENiG7kUPXQ" points="[0, 0, -136, -168]$[138, 164, 2, -4]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZW-pQIAoEeKSENiG7kUPXQ" id="(0.9176470588235294,0.2465753424657534)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZW_QUIAoEeKSENiG7kUPXQ" id="(0.726027397260274,0.06557377049180328)"/>
+  </edges>
+</notation:Diagram>

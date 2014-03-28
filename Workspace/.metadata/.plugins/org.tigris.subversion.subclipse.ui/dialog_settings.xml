@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="378" key="RevertDialog.location.x"/>
+	<item value="564" key="passwordStores.size.y"/>
+	<item value="556" key="passwordStores.size.x"/>
+	<item value="133" key="RevertDialog.location.y"/>
+	<item value="130" key="BranchTag.location.y"/>
+	<item value="428" key="BranchTag.location.x"/>
+	<item value="22" key="UpdateDialogWithConflictHandling.location.y"/>
+	<item value="525" key="RevertDialog.size.x"/>
+	<item value="415" key="RevertDialog.size.y"/>
+	<item value="471" key="ChooseUrlDialog.location.x"/>
+	<item value="" key="DirectorySelectionPage.lastParent_https://membrane.googlecode.com/svn/trunk/%20membrane%20--username%20b.kjellgren@gmail.com"/>
+	<item value="105" key="ChooseUrlDialog.location.y"/>
+	<item value="500" key="CommitDialog.weights.0"/>
+	<item value="https://membrane.googlecode.com/svn/branches/TestBranch" key="UrlCombo.membrane.0"/>
+	<item value="https://membrane.googlecode.com/svn/trunk/%20membrane%20--username%20b.kjellgren@gmail.com/membrane" key="UrlCombo.membrane.1"/>
+	<item value="500" key="CommitDialog.weights.1"/>
+	<item value="477" key="ChooseUrlDialog.size.x"/>
+	<item value="349" key="ChooseUrlDialog.size.y"/>
+	<item value="415" key="BranchTag.size.y"/>
+	<item value="303" key="MarkResolvedDialog.location.x"/>
+	<item value="121" key="MarkResolvedDialog.location.y"/>
+	<item value="563" key="BranchTag.size.x"/>
+	<item value="759" key="SwitchDialogWithConflictHandling.size.y"/>
+	<item value="590" key="SwitchDialogWithConflictHandling.size.x"/>
+	<item value="414" key="SwitchDialogWithConflictHandling.location.x"/>
+	<item value="22" key="SwitchDialogWithConflictHandling.location.y"/>
+	<item value="22" key="CommitDialog.location.y"/>
+	<item value="5" key="CommitDialog.location.x"/>
+	<item value="703" key="UpdateDialogWithConflictHandling.size.y"/>
+	<item value="22" key="passwordStores.location.y"/>
+	<item value="525" key="UpdateDialogWithConflictHandling.size.x"/>
+	<item value="290" key="passwordStores.location.x"/>
+	<item value="530" key="MarkResolvedDialog.size.x"/>
+	<item value="428" key="MarkResolvedDialog.size.y"/>
+	<item value="https://membrane.googlecode.com/svn/trunk/%20membrane%20--username%20b.kjellgren@gmail.com" key="RepositorySelectionPage.lastRepository"/>
+	<item value="1127" key="CommitDialog.size.x"/>
+	<item value="774" key="CommitDialog.size.y"/>
+	<item value="378" key="UpdateDialogWithConflictHandling.location.x"/>
+	<section name="CommitWizard">
+		<item value="false" key="ShowCompare"/>
+		<item value="500" key="VWeight2"/>
+		<item value="500" key="VWeight1"/>
+	</section>
+	<section name="NewLocationWizard">
+	</section>
+</section>

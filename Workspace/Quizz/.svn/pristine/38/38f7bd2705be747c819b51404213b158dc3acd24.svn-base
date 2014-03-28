@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quizz:Quizz xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:quizz="http://quizz/1.0" name="Group Membrane Quizz version 2">
+  <end/>
+  <start next="//@questions.0"/>
+  <questions xsi:type="quizz:FreeText" title="Question 1" text="What is the meaning of life?" next="//@questions.1"/>
+  <questions xsi:type="quizz:MultipleChoice" title="Question 2" text="What is 3 + 4 = ? " id="1" next="//@questions.2">
+    <answers text="7" correct="true" points="1" next="//@questions.2"/>
+    <answers text="13" id="1" next="//@questions.2"/>
+  </questions>
+  <questions xsi:type="quizz:MultipleChoice" title="Question 3" text="What is 10 * 3 = ?" id="2" next="//@end">
+    <answers text="43" id="1" next="//@questions.3"/>
+    <answers text="30" correct="true" points="1" next="//@questions.3"/>
+  </questions>
+  <questions xsi:type="quizz:MultipleChoice" title="Question 4" text="What is 4+9 = ?" id="3" next="//@end">
+    <answers text="13" correct="true" points="1" next="//@end"/>
+    <answers text="11" id="1" next="//@end"/>
+  </questions>
+  <score username="Group Membrane"/>
+</quizz:Quizz>

@@ -1,0 +1,60 @@
+[comment encoding = UTF-8 /]
+[module generate('http://quizz/1.0')]
+
+
+[template public generateElement(aQuizz : Quizz)]
+[comment @main/]
+[file (aQuizz.name.concat('.xml'),false)]
+	<?xml version="1.0" encoding="iso-8859-1"?>
+
+		<quizz name=[aQuizz.name/] id=[aQuizz.id/]>
+
+			<scoreboard>
+    			<score>[score.score/]</score>
+				<name>[score.username/]</name>
+			</scoreboard>
+			<questions>
+			[for (q: MultipleChoice | aQuizz.questions->filter(MultipleChoice))]
+				
+        		<question id=[q.id/]>
+            		<title>[q.title/]</title>
+            		<text>[q.text/]</text>
+					[if (q.next.oclAsType(Endpoint).oclIsInvalid()._not())]
+					<linkTo>Endpoint</linkTo>
+					[else]
+					<linkTo>Question.[q.next.oclAsType(Question).id/]</linkTo>
+					[/if]
+				<answers>
+			[for (a: Answer | q.answers)]	
+				<answer id=[a.id/]>
+					<text>[a.text/]</text>
+					<points>[a.points/]</points>
+					<correct>[a.correct/]</correct>
+					[if (a.next.oclAsType(Endpoint).oclIsInvalid()._not())]
+					<linkTo>Endpoint</linkTo>
+					[else]
+					<linkTo>Answer.[a.next.oclAsType(Answer).id/]</linkTo>
+					[/if]
+				</answer>
+			[/for]
+				</answers>
+				</question>
+			[/for]
+			[for (qF: FreeText | aQuizz.questions->filter(FreeText))]
+			
+				<question id=[qF.id/]>
+					<title>[qF.title/]</title>
+            		<text>[qF.text/]</text>
+					[if (qF.next.oclAsType(Endpoint).oclIsInvalid()._not())]
+					<linkTo>Endpoint</linkTo>
+					[else]
+					<linkTo>Question.[qF.next.oclAsType(FreeText).id/]</linkTo>
+					[/if]
+				</question>
+			[/for]
+			</questions>
+		</quizz>
+	</xml>
+
+[/file]
+[/template]
